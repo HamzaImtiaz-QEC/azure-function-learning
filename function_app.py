@@ -35,7 +35,7 @@ def random_number(req: func.HttpRequest) -> func.HttpResponse:
             pass
 
     if not message:
-        message = "No message"
+        message = "No-message"
 
     # Random number
     number = random.randint(1, 100)
