@@ -6,7 +6,7 @@ from azure.storage.blob import BlobServiceClient
 import azure.functions as func
 import logging
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
