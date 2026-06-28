@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 @app.route(route="randomnumbers")
 def random_number(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Function triggered')
+    logging.info('Function is triggered')
 
     # Authentication
     key = req.params.get('key') or req.headers.get('key')
